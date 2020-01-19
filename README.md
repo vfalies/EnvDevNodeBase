@@ -1,6 +1,6 @@
 # EndDevNodeBase
 
-[![Build Status](https://travis-ci.org/vfalies/EnvDevJS.svg?branch=master)](https://travis-ci.org/vfalies/EnvDevJS)
+[![Build Status](https://travis-ci.org/vfalies/EnvDevNodeBase.svg?branch=master)](https://travis-ci.org/vfalies/EnvDevNodeBase)
 
 EndDevNodeBase is a Node container designed to be used like a base for a utilisation into the [EnvDev project](https://vfac.fr/projects/envdev).
 The utlisation outside this project is naturally possible.
@@ -16,7 +16,7 @@ Three Node versions are available through image's tags:
 The latest version of EndDevNodeBase (latest) (`vfac/envdevnodebase`) is a image with the last version of Node available.
 Each versions exist in Alpine version to limit the image size.
 
-## JS Tools
+## JS Tool
 
 5 globals JS tools are available throught this container :
 
