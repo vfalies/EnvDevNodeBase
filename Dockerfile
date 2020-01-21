@@ -23,4 +23,7 @@ RUN apt-get update && apt-get install -y apt-transport-https ca-certificates \
 # Typescript
 RUN npm install -g typescript
 
+# Create-React-App
+RUN npm install -g create-react-app
+
 USER vfac:vfac
