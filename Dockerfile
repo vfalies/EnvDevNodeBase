@@ -1,4 +1,4 @@
-FROM node:13.6-alpine
+FROM node:12.14-alpine
 LABEL maintainer="Vincent Faliès <vincent@vfac.fr>"
 
 USER root
