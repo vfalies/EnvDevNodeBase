@@ -26,4 +26,11 @@ RUN npm install -g typescript
 # Create-React-App
 RUN npm install -g create-react-app
 
+# Nodemon
+RUN npm install -g nodemon
+
+RUN npm i -f
+
 USER vfac:vfac
+
+CMD ["tail","-f","/dev/null"]
