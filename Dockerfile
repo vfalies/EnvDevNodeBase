@@ -29,6 +29,9 @@ RUN npm install -g create-react-app
 # Nodemon
 RUN npm install -g nodemon
 
+# Expo React-Native
+RUN npm install -g expo-cli
+
 RUN npm i -f
 
 USER vfac:vfac
