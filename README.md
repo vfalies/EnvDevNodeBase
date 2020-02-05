@@ -27,3 +27,4 @@ Each versions exist in Alpine version to limit the image size.
 - Typescript (3.7.5)
 - Create-React-App (3.3.0)
 - Nodemon (2.0.2)
+- Expo-cli (3.11.9)
