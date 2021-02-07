@@ -31,6 +31,24 @@ RUN npm install -g nodemon
 # Expo React-Native
 RUN npm install -g expo-cli
 
+# User creation
+RUN adduser --system --uid 1003 vfac \
+    && addgroup -g 1003 -S vfac
+
+RUN apk add --update \
+    curl \
+    && rm -rf /var/cache/apk/*
+
+# Install fixuid
+RUN USER=vfac && \
+    GROUP=vfac && \
+    curl -SsL https://github.com/boxboat/fixuid/releases/download/v0.5/fixuid-0.5-linux-amd64.tar.gz | tar -C /usr/local/bin -xzf - && \
+    chown root:root /usr/local/bin/fixuid && \
+    chmod 4755 /usr/local/bin/fixuid && \
+    mkdir -p /etc/fixuid && \
+    printf "user: $USER\ngroup: $GROUP\n" > /etc/fixuid/config.yml
+ENTRYPOINT ["fixuid", "-q"]
+
 USER vfac:vfac
 
 CMD ["tail","-f","/dev/null"]
