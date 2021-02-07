@@ -20,11 +20,11 @@ Each versions exist in Alpine version to limit the image size.
 
 7 globals JS tools are available throught this container :
 
-- NPM (6.13.6)
+- NPM (7.5.2)
 - Grunt (1.3.2)
 - Gulp (4.0.2)
-- Yarn (1.21.1)
+- Yarn (1.22.5)
 - Typescript (3.7.5)
-- Create-React-App (3.3.0)
-- Nodemon (2.0.2)
-- Expo-cli (3.11.9)
+- Create-React-App (4.0.2)
+- Nodemon (2.0.7)
+- Expo-cli (4.1.6)
