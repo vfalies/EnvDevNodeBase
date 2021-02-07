@@ -1,7 +1,10 @@
-FROM node:13.6
+FROM node:15.8
 LABEL maintainer="Vincent Faliès <vincent@vfac.fr>"
 
 USER root
+
+WORKDIR /usr/app
+COPY ./ /usr/app
 
 # NPM last version
 RUN npm i npm@latest -g
