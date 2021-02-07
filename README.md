@@ -12,6 +12,7 @@ Three Node versions are available through image's tags:
 - 13.6
 - 12.14
 - 10.18
+- 15.8
 
 The latest version of EndDevNodeBase (latest) (`vfac/envdevnodebase`) is a image with the last version of Node available.
 Each versions exist in Alpine version to limit the image size.
